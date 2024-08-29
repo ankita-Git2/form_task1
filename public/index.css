@@ -1,0 +1,93 @@
+/* Resetting default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body and html styling */
+body,
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5; /* Light background color for a clean look */
+  overflow: hidden;
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+}
+
+/* Form styling */
+#userForm {
+  width: 350px; /* Reduced width for a compact look */
+  padding: 25px; /* Increased padding for spacing */
+  background-color: #ffffff; /* White background for contrast */
+  border: 2px solid #004d40; /* Darker border for emphasis */
+  border-radius: 10px; /* Smoother border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increased gap for better spacing */
+}
+
+/* Input fields and button styling */
+#userForm input,
+#userForm button {
+  width: 100%;
+  padding: 12px; /* Increased padding for larger clickable area */
+  margin-bottom: 8px; /* Consistent margin for spacing */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f7f7f7; /* Light gray background for input fields */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  font-size: 16px; /* Increased font size for readability */
+  transition: all 0.3s ease; /* Smooth transition for interactive elements */
+}
+
+/* Placeholder styling */
+#userForm input::placeholder {
+  color: #888888; /* Light gray placeholder text */
+  font-size: 14px; /* Placeholder font size */
+  font-family: 'Arial', sans-serif; /* Consistent font family */
+}
+
+/* Button styling */
+#userForm button {
+  font-family: 'Arial', sans-serif; /* Consistent font family */
+  background-color: #140079; /* Primary color for the button */
+  color: white; /* White text color for contrast */
+  border: none; /* No border for a clean look */
+  cursor: pointer; /* Pointer cursor for button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Button hover effect */
+#userForm button:hover {
+  background-color: #004d40; /* Darker color on hover */
+}
+
+/* Autofill styling */
+#userForm input:-webkit-autofill,
+#userForm input:-webkit-autofill:hover,
+#userForm input:-webkit-autofill:focus,
+#userForm input:-webkit-autofill:active {
+  background-color: #e0f7fa !important; /* Light blue autofill background */
+  color: #004d40; /* Text color for autofilled input */
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset !important; /* Subtle shadow */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset !important; /* Subtle shadow */
+}
+
+/* Form heading styling */
+#userForm h2 {
+  font-family: 'Arial', sans-serif; /* Consistent font family */
+  margin-bottom: 20px; /* Space below the heading */
+  margin-top: 10px; /* Space above the heading */
+  font-size: 22px; /* Font size for heading */
+  font-weight: bold; /* Bold font weight */
+  color: #00796b; /* Primary color for text */
+  text-align: center; /* Centered heading */
+  border-bottom: 2px solid #004d40; /* Bottom border for heading */
+  padding-bottom: 10px; /* Padding below heading */
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Roboto', sans-serif; /* A modern and clean font */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 40px; /* Increased padding for more space */
+  border-radius: 20px;
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border: none; /* Removed border */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 12px 15px; /* Slightly increased padding */
+  margin: 10px 0; /* Consistent margin for spacing */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #c8734e; /* Border color change on focus */
+  box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Glowing effect on focus */
+  outline: none; /* Removes default outline */
+}
+
+button {
+  background: linear-gradient(135deg, #46c5b0, #3b8d99); /* Gradient button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3b8d99, #46c5b0); /* Reversed gradient on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Normal position when clicked */
+  background: #9e45a0; /* Active state color */
+}

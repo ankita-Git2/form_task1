@@ -1,0 +1,92 @@
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Height Container */
+body,
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering content horizontally */
+    background-color: #0e1823; /* Darker background for body */
+    overflow: hidden;
+    padding: 20px 0;
+    font-family: 'Roboto', Arial, sans-serif; /* Updated font family */
+}
+
+/* Table Container Styling */
+#tableContainer {
+    max-width: 90%; /* Responsive width */
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #0a3a42; /* Slightly lighter background */
+    border: 2px solid #2e4a50; /* Darker border for contrast */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Darker, more pronounced shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    font-family: 'Roboto', Arial, sans-serif; /* Updated font family */
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff914d, #ff007a); /* Updated gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', Arial, sans-serif; /* Updated font family */
+}
+
+/* Table Border and Cell Styling */
+table, th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Lighter, semi-transparent border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    background-color: #66999b; /* Softer background color */
+    color: #022b32; /* Text color for readability */
+    font-size: 15px;
+}
+
+/* Header Cell Styling */
+th {
+    background-color: #026144; /* Keeping the original style for headers */
+    color: white;
+}
+
+/* Button Styling */
+#addNewUserBtn {
+    margin: auto;
+    width: 150px;
+    padding: 10px;
+    background-color: #028858; /* Lighter green for a fresh look */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', Arial, sans-serif; /* Updated font family */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Darker shadow for button */
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+#addNewUserBtn:hover {
+    background-color: #03c988; /* Bright green for hover state */
+}
